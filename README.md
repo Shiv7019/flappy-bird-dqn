@@ -1,4 +1,4 @@
-# 🐤 Flappy Bird DQN — Reinforcement Learning Agent
+#  Flappy Bird DQN — Reinforcement Learning Agent
 
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-DQN-red)
@@ -31,11 +31,11 @@ This repo includes the training code, the network, the replay buffer, a pretrain
 This project trains an AI agent to play **Flappy Bird** using **Deep Q-Learning**, a reinforcement learning algorithm. At every moment in the game, the agent sees 12 numbers describing the bird and the upcoming pipes, and has to choose one of two actions: **flap** or **do nothing**. It gets rewarded for staying alive and passing pipes, and penalized for dying. Over thousands of episodes, a neural network learns which action to take in which situation, purely from experience.
 
 **What's inside:**
-- 🏋️ Train a DQN agent from scratch
-- 👀 Watch your trained agent play automatically
-- 🕹️ Play the game yourself with the keyboard
-- ⚙️ All hyperparameters tweakable from one YAML file
-- 📈 A pretrained model + training log included, so you can see it in action immediately
+-  Train a DQN agent from scratch
+-  Watch your trained agent play automatically
+-  Play the game yourself with the keyboard
+-  All hyperparameters tweakable from one YAML file
+-  A pretrained model + training log included, so you can see it in action immediately
 
 ---
 
@@ -104,7 +104,7 @@ It went from crashing almost immediately (best reward ≈ **-8.7**) to reliably 
 
 ---
 
-## Setup Guide — Windows 🪟
+## Setup Guide — Windows 
 
 1. **Install Python**
    Download Python 3.12 (or newer) from [python.org/downloads](https://www.python.org/downloads/). During install, **check the box that says "Add python.exe to PATH"** — this saves a lot of headaches later.
@@ -141,7 +141,7 @@ It went from crashing almost immediately (best reward ≈ **-8.7**) to reliably 
 
 ---
 
-## Setup Guide — macOS 🍎
+## Setup Guide — macOS 
 
 1. **Install Python**
    Download Python 3.12 (or newer) from [python.org/downloads/macos](https://www.python.org/downloads/macos/), **or** if you use Homebrew:
@@ -187,7 +187,7 @@ It went from crashing almost immediately (best reward ≈ **-8.7**) to reliably 
 
 All commands below assume your virtual environment is activated and you're inside the project folder.
 
-### 🏋️ Train a new agent from scratch
+###  Train a new agent from scratch
 
 ```bash
 python agent.py flappybirdv0 --train
@@ -205,7 +205,7 @@ python agent.py flappybirdv0
 
 This loads the saved model from `runs/flappybirdv0.pt`, opens a game window, and lets the trained agent play on its own using what it has learned (no more randomness/exploration). See [Good to Know](#good-to-know) below for how to use the *included* pretrained model here.
 
-### 🕹️ Play it yourself
+### Play it yourself
 
 ```bash
 python RL_FlappyBird.py
